@@ -9,6 +9,7 @@ import javax.persistence.Id;
 public class OrderItem {
 
     @Id @GeneratedValue
+    @Column(name = "ORDER_ITEM_ID")
     private String id;
 
     @Column(name = "ORDER_ID")
