@@ -38,5 +38,6 @@ public class Member {
 
     public void setTeam(Team team) {
         this.team = team;
+        team.getMembers().add(this);  // 주인과 주인이 아닌 양쪽에 값 설정하기
     }
 }
